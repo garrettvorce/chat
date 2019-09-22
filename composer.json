@@ -1,12 +1,13 @@
 {
-    "name": "musonza/chat",
-    "description": "Chat Package for Laravel 5.4 and up",
+    "name": "garrettvorce/mailify",
+    "description": "Mail Package for Laravel 5.5+",
     "type": "library",
     "keywords": [
         "laravel",
         "chat",
         "messaging",
-        "conversation"
+        "conversation",
+        "group"
     ],
     "require": {
         "php": ">=7.0",
@@ -21,19 +22,19 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Tinashe Musonza",
-            "email": "tashtin263@gmail.com",
-            "role": "Developer"
+            "name": "Garrett Vorce",
+            "email": "garrett.vorce@gmail.com",
+            "role": "Senior Software Engineer @ AVA - Bangkok, Thailand"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Musonza\\Chat\\": "src/"
+            "Mailify\\Chat\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Musonza\\Chat\\Tests\\": "tests"
+            "Mailify\\Chat\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -42,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Musonza\\Chat\\ChatServiceProvider"
+                "Mailify\\Chat\\ChatServiceProvider"
             ],
             "aliases": {
-                "Chat": "Musonza\\Chat\\Facades\\ChatFacade"
+                "Chat": "Mailify\\Chat\\Facades\\ChatFacade"
             }
         }
     }
